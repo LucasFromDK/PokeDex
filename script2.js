@@ -44,15 +44,15 @@ function showAbilities(name) {
     imgElement.id = imageData;
     imgElement.className = "image";
     imgElement.src = imageData;
-    
+
     let typeElement = document.createElement("p");
     if (data.types.length == 1) {
-        typeElement.innerHTML = "Type: " + data.types[0].type.name;    
+        typeElement.innerHTML = "Type: " + data.types[0].type.name;
     } else typeElement.innerHTML = "Type: " + data.types[0].type.name + ", " + data.types[1].type.name;
 
     let moveElement = document.createElement("p");
     moveElement.innerHTML = "Moves: " + data.moves[0].move.name + ", " + data.moves[1].move.name + ", " + data.moves[2].move.name;
-    
+
     let weightElement = document.createElement("p");
     weightElement.innerHTML = "Weight: " + data.weight;
 
@@ -74,11 +74,11 @@ function showAbilities(name) {
     divElement.appendChild(moveElement);
     divElement.appendChild(weightElement);
     divElement.appendChild(heightElement);
-    
+
     document.getElementsByClassName("container")[0].appendChild(divElement);
     if (data.types.length == 1) {
         document.getElementsByClassName("pageTitle")[0].classList.add(data.types[0].type.name);
-        document.getElementsByClassName("bottomColor")[0].classList.add(data.types[0].type.name);        
+        document.getElementsByClassName("bottomColor")[0].classList.add(data.types[0].type.name);
     } else {
         document.getElementsByClassName("pageTitle")[0].classList.add(data.types[0].type.name);
         document.getElementsByClassName("bottomColor")[0].classList.add(data.types[1].type.name);

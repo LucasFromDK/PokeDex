@@ -26,8 +26,8 @@ async function fetchPokemon() {
 function displayPokemon() {
     //document.getElementsByClassName("container")[0].innerHTML = data.results[0].name;
     for (let i = 0; i < nameData.results.length; i++) {
-        nextPokemon(nameData.results[i].name + ` #${i+1}`);
-        imageData = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${i+2}.png`;
+        nextPokemon(nameData.results[i].name + ` #${i + 1}`);
+        imageData = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${i + 2}.png`;
     }
 }
 
